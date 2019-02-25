@@ -16,7 +16,7 @@ a:hover {
 /* ------------------ */
 .grid {
 	display: grid;
-	grid-template-columns: 15% 85%;
+	grid-template-columns: 10% 85%;
 	/*grid rows not needed, will auto the length */
 
 	grid-template-areas:
@@ -48,12 +48,21 @@ a:hover {
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	margin-left: 5px;
+	border-radius: 7px;
 }
 .sidebar li{
 	padding-top: 10px;
 }
 
 /* ------------------ */
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+
 .content {
 	grid-area: content;
 	/*justify-self: start;  begins content on left / start of that frame. 'end' for right. or center */
@@ -65,6 +74,21 @@ a:hover {
 	margin-bottom: 10px;
 	margin-top: 15px;
 	margin-right: 15px;
+
+}
+
+.box#certifications {
+
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+.contact_table {
+	padding: 5px 5px 5px 5px;
+	text-align: left;
+}
+.contact_table td  {
+	padding-left: 5px;
 }
 p {
 	padding: 5px;
@@ -84,11 +108,13 @@ p {
 	display: inline-block;
 	color: #FFFFFF;
 }
+
 /* ------------------ */
 .footer {
 	grid-area: footer;
 	padding-top: 15px;
 	padding-left: 15px;
+	margin-bottom: 15px;
 }
 
 
