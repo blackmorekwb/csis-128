@@ -1,6 +1,9 @@
 $(document).ready(function() {
   var content = $('.content');
+  content.load('home.html');
 
+  // apprently this method -> jquey load functions are deprecated, due to performance
+  // will convert to ajax calls later #TODO
   function load_content() {
     // target is the data-target html attribute.
     var $this = $(this),
